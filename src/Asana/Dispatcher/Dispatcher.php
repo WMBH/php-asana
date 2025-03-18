@@ -1,8 +1,8 @@
 <?php
 
-require_once __DIR__ . '/../../../vendor/autoload.php';
-
 namespace Asana\Dispatcher;
+
+require_once __DIR__ . '/../../../vendor/autoload.php';
 
 use \Httpful;
 use \Httpful\Mime;
