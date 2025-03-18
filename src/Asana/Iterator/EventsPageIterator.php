@@ -32,7 +32,7 @@ class EventsPageIterator extends PageIterator
         return isset($result->sync) ? $result->sync : null;
     }
 
-    public function next()
+    public function next(): void
     {
         while (true) {
             parent::next();

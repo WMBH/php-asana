@@ -12,6 +12,9 @@ use Asana\Errors\ServerError;
 
 class AsanaError extends \Exception
 {
+    protected $status;
+    protected $response;
+
     public function __construct($message, $status, $response)
     {
         $this->message = $message;

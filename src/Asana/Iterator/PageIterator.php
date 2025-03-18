@@ -4,6 +4,7 @@ namespace Asana\Iterator;
 
 use Asana\Iterator\ItemIterator;
 
+#[\AllowDynamicProperties]
 abstract class PageIterator implements \Iterator
 {
     abstract protected function getInitial();

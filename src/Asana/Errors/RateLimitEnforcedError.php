@@ -7,6 +7,7 @@ use Asana\Errors\RetryableAsanaError;
 class RateLimitEnforcedError extends RetryableAsanaError
 {
     const MESSAGE = 'Rate Limit Enforced';
+    public $retryAfter;
     const STATUS = 429;
 
     public function __construct($response)
